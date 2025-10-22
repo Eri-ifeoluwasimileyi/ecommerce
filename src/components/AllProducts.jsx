@@ -7,7 +7,7 @@ const AllProducts = () => {
         <div>
             {
                 products?.data?.map((product)  => (
-                    <div>
+                    <div key={product.id}>
                         <img src={product.image}alt="" />
                         <h3>{product.title}</h3>
                         <h4>{product.price}</h4>
