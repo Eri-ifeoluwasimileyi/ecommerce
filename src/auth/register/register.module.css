@@ -1,0 +1,9 @@
+.linkToLogin{
+    display: flex;
+    align-items: center;
+}
+
+.linkToLogin a{
+    color: blueviolet;
+    text-decoration: none;
+}

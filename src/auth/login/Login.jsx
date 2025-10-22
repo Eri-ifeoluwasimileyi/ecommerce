@@ -4,14 +4,6 @@ const Login = () => {
     return (
         <div>
             <div>
-                <label htmlFor="firstName">FirstName</label>
-                <input type="text" placeholder="firstName" />
-            </div>
-            <div>
-                <label htmlFor="lastName">LastName</label>
-                <input type="text" placeholder="lastName" />
-            </div>
-            <div>
                 <label htmlFor="email">Email</label>
                 <input type="text" placeholder="email" />
             </div>

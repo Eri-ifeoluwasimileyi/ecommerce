@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router"
+import styles from "./register.module.css"
 
 const Register = () => {
     return (
@@ -22,9 +23,8 @@ const Register = () => {
                 <input type="text" placeholder="password" />
             </div>
         </form>
-            <div className={}>
-                <p>Already have an account?</p>
-                <Link to="/login">Login</Link>
+            <div className={styles.linkToLogin}>
+                <p>Already have an account? <Link to="/login">Login</Link></p>
             </div>
         </div>
     )

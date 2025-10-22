@@ -6,7 +6,7 @@ const AllProducts = () => {
     return (
         <div>
             {
-                products?.data?.map((product) => (
+                products?.data?.map((product)  => (
                     <div>
                         <img src={product.image}alt="" />
                         <h3>{product.title}</h3>
