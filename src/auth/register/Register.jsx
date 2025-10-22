@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState} from "react"
 import { Link } from "react-router"
 import styles from "./register.module.css"
 
@@ -10,14 +10,12 @@ const Register = () => {
         email:"",
         password:""
     }
-    const [user, setUser] = useState(userProfile)
+    const [user, setUser] = useState(userProfile);
 
     const handleChange = (event) => {
+        console.log(event)
         const {name, value} = event.target
-        setUser({
-            ...user,
-            [name]: value
-        })
+        setUser()
     }
 
     // const handleFirstName = (e) => {
@@ -29,7 +27,6 @@ const Register = () => {
     //     const lastName = event.target.value.trim()
     //     setLastName(lastName)
     // }
-
 
 
     return (
